@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  min-height: 100svh;
+}
+
+header {
+  background-color: rgb(97, 97, 175);
+  height: 60px;
+}
+
+.centering {
+  display: grid;
+  grid-template-columns:
+    minmax(30px, 1fr) /* minimum padding = 30px */
+    minmax(auto, 900px)
+    minmax(30px, 1fr); /* minimum padding = 30px */
+  grid-template-areas: ". article .";
+
+  background-color: rgb(228, 228, 228);
+}
+
+article {
+  grid-area: article;
+  background-color: white;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.iframe-container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  justify-items: center;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.iframe-container > iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 64/36;
+}

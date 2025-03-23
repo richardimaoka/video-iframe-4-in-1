@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header></header>
+    <div class="centering">
+      <article>
+        <h1>HTMLの&lt;iframe&gt;タグを使って4-in-1動画サムネイルを実現</h1>
+        <p>
+          記事コンテンツの中で動画を埋め込んで紹介したい時に、たったひとつの動画ではなく、複数の動画を一気に紹介する場合はどうなるでしょう？
+        </p>
+
+        <p>
+          例えば、以下のように4つの動画を並べて紹介したいとします。その場合…
+        </p>
+
+        <div class="iframe-container">
+          <iframe
+            id="existing-iframe-example1"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/-s8XdFyIEeM?enablejsapi=1"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            id="existing-iframe-example2"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/fSlNvBU-t38?enablejsapi=1"
+            frameborder="0"
+          ></iframe>
+          <iframe
+            id="existing-iframe-example3"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/_AERyyyBxWM?enablejsapi=1"
+            frameborder="0"
+          ></iframe>
+          <iframe
+            id="existing-iframe-example4"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/yuQcgiBsolQ?enablejsapi=1"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <p>
+          何も考えずに並べてしまうと、このように縦に大きくスペースを取ってしまい、記事を読むリズムが悪くなってしまいます。
+        </p>
+      </article>
+    </div>
+  </body>
+</html>
