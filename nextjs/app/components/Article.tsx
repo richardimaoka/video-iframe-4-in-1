@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Article.module.css";
 import YouTubeVideo from "./YouTubeVideo";
+import YouTubeVideoQuad from "./YouTubeVideoQuad";
 
 export default function Article() {
   return (
@@ -31,7 +32,14 @@ export default function Article() {
         </blockquote>
 
         <h3>Video Content</h3>
-        <YouTubeVideo videoId="dQw4w9WgXcQ" />
+        <YouTubeVideo videoId="-s8XdFyIEeM" />
+
+        <YouTubeVideoQuad
+          videoId1="-s8XdFyIEeM"
+          videoId2="fSlNvBU-t38"
+          videoId3="_AERyyyBxWM"
+          videoId4="yuQcgiBsolQ"
+        />
 
         <p>
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut

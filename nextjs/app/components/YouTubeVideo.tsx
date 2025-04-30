@@ -10,8 +10,9 @@ export default function YouTubeVideo({ videoId }: YouTubeVideoProps) {
     <div className={styles.component}>
       <iframe
         className={styles.videoFrame}
-        src={`https://www.youtube.com/embed/-s8XdFyIEeM?enablejsapi=1`}
+        src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1`}
         title="YouTube video player"
+        allowFullScreen
       ></iframe>
     </div>
   );
