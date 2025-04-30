@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Article.module.css";
+import YouTubeVideo from "./YouTubeVideo";
 
 export default function Article() {
   return (
@@ -28,6 +29,10 @@ export default function Article() {
         <blockquote className={styles.blockquote}>
           "The best way to predict the future is to invent it." - Alan Kay
         </blockquote>
+
+        <h3>Video Content</h3>
+        <YouTubeVideo videoId="dQw4w9WgXcQ" />
+
         <p>
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
