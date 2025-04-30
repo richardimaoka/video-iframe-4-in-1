@@ -23,6 +23,10 @@ header {
   background-color: rgb(228, 228, 228);
 }
 
+h1 {
+  font-size: 1.325rem;
+}
+
 article {
   grid-area: article;
   background-color: white;
@@ -45,4 +49,8 @@ article {
   max-width: 100%;
   height: auto;
   aspect-ratio: 64/36;
+}
+
+.light-gray {
+  color: gray;
 }
