@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./YouTubeVideo.module.css";
 
 interface YouTubeVideoProps {
@@ -15,12 +15,24 @@ declare global {
 
 export default function YouTubeVideo({ videoId }: YouTubeVideoProps) {
   const [i, setI] = useState(1);
+  const [player, setPlayer] = useState(null);
 
   if (typeof window !== "undefined") {
+    // https://developers.google.com/youtube/iframe_api_reference#Requirements
+    // Defining onYouTubeIframeAPIReady is a requirement to use <script src="https://www.youtube.com/iframe_api"></script>
     window.onYouTubeIframeAPIReady = function () {
       console.log("onYouTubeIframeAPIReady called");
     };
   }
+
+  useEffect(() => {
+    // @ts-ignore YT is made available by <script src="https://www.youtube.com/iframe_api"></script>
+    if (typeof YT !== "undefined") {
+      console.log("creating a player");
+      // The first parameter specifies either the DOM element or the id of the HTML element
+      // where the API will insert the <iframe> tag containing the player.
+    }
+  }, []);
 
   return (
     <div>
@@ -32,13 +44,6 @@ export default function YouTubeVideo({ videoId }: YouTubeVideoProps) {
           allowFullScreen
         ></iframe>
       </div>
-      <button
-        onClick={() => {
-          setI(i + 1);
-        }}
-      >
-        {i}
-      </button>
     </div>
   );
 }

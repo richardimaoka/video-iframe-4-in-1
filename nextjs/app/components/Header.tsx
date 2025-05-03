@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <h1 className={styles.title}>My Blog</h1>
+        <h1 className={styles.title}>My Demo Blog Article</h1>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
