@@ -59,12 +59,12 @@ export default function Article() {
         <YouTubeVideo videoId="yuQcgiBsolQ" />
         <YouTubeVideo videoId="gpwdLX86wD8" /> */}
 
-        <YouTubeVideoQuad
+        {/* <YouTubeVideoQuad
           videoId1="fSlNvBU-t38"
           videoId2="_AERyyyBxWM"
           videoId3="yuQcgiBsolQ"
           videoId4="gpwdLX86wD8"
-        />
+        /> */}
 
         <p>
           Since the videos occupy such a large portion of the article's visual
