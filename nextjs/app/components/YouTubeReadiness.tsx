@@ -16,13 +16,12 @@ type Props = {
 
 export function YouTubeReadiness(props: Props) {
   const [ready, setReady] = useState(false);
-  console.log("YouTubeReadiness", ready);
+  // console.log("YouTubeReadiness", ready);
 
   if (typeof window !== "undefined") {
     // https://developers.google.com/youtube/iframe_api_reference#Requirements
     // Defining onYouTubeIframeAPIReady is a requirement to use <script src="https://www.youtube.com/iframe_api"></script>
     window.onYouTubeIframeAPIReady = function () {
-      console.log("onYouTubeIframeAPIReady called");
       setReady(true);
     };
   }

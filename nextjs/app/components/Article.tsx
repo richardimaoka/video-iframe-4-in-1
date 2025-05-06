@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import styles from "./Article.module.css";
 import YouTubeVideo from "./YouTubeVideo";
 import YouTubeVideoQuad from "./YouTubeVideoQuad";
 
 export default function Article() {
+  console.log("Article rendered");
+
   return (
     <article className={styles.article}>
       <h2 className={styles.title}>
@@ -28,7 +32,7 @@ export default function Article() {
         </p>
         <h3>New in Chrome Q1 2025: The Big Picture</h3>
 
-        <YouTubeVideo videoId="-s8XdFyIEeM" />
+        {/* <YouTubeVideo videoId="-s8XdFyIEeM" /> */}
 
         <p>
           The new in Chrome Q1 2025 video provides a comprehensive overview of
@@ -54,17 +58,17 @@ export default function Article() {
           want to omit any of them.
         </p>
 
-        {/* <YouTubeVideo videoId="fSlNvBU-t38" />
+        <YouTubeVideo videoId="fSlNvBU-t38" />
         <YouTubeVideo videoId="_AERyyyBxWM" />
         <YouTubeVideo videoId="yuQcgiBsolQ" />
-        <YouTubeVideo videoId="gpwdLX86wD8" /> */}
+        <YouTubeVideo videoId="gpwdLX86wD8" />
 
-        {/* <YouTubeVideoQuad
+        <YouTubeVideoQuad
           videoId1="fSlNvBU-t38"
           videoId2="_AERyyyBxWM"
           videoId3="yuQcgiBsolQ"
           videoId4="gpwdLX86wD8"
-        /> */}
+        />
 
         <p>
           Since the videos occupy such a large portion of the article's visual
