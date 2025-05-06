@@ -32,7 +32,7 @@ export default function Article() {
         </p>
         <h3>New in Chrome Q1 2025: The Big Picture</h3>
 
-        {/* <YouTubeVideo videoId="-s8XdFyIEeM" /> */}
+        <YouTubeVideo videoId="-s8XdFyIEeM" />
 
         <p>
           The new in Chrome Q1 2025 video provides a comprehensive overview of
@@ -50,7 +50,7 @@ export default function Article() {
           into the specific version updates.
         </p>
 
-        <h3>Four videos in a row</h3>
+        <h3>Four videos in a matrix</h3>
 
         <p>
           Then, how does it look when I align four videos in a row as follows?
@@ -58,10 +58,10 @@ export default function Article() {
           want to omit any of them.
         </p>
 
-        <YouTubeVideo videoId="fSlNvBU-t38" />
+        {/* <YouTubeVideo videoId="fSlNvBU-t38" />
         <YouTubeVideo videoId="_AERyyyBxWM" />
         <YouTubeVideo videoId="yuQcgiBsolQ" />
-        <YouTubeVideo videoId="gpwdLX86wD8" />
+        <YouTubeVideo videoId="gpwdLX86wD8" /> */}
 
         <YouTubeVideoQuad
           videoId1="fSlNvBU-t38"
